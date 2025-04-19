@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+    <!-- Article Image -->
+    <ImageView
+            android:id="@+id/imageViewArticle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter" />
+
+    <!-- Article Name -->
+    <TextView
+            android:id="@+id/textViewArticleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    <!-- Article Price -->
+    <TextView
+            android:id="@+id/textViewArticlePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#888"
+            android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_add_article.xml -->
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="16dp">
+	
+	<EditText
+			android:id="@+id/etUpdateArticleName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Article Name"
+			android:inputType="text" />
+	
+	<EditText
+			android:id="@+id/etUpdateArticlePrice"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Price"
+			android:inputType="numberDecimal" />
+	
+	<EditText
+			android:id="@+id/etUpdateArticleDescription"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Description"
+			android:inputType="textMultiLine"
+			android:minLines="3" />
+	
+	<Spinner
+			android:id="@+id/spinnerCategoryUpdate"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	
+	<ImageView
+			android:id="@+id/imageViewUpdate"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:src="@drawable/ic_image_placeholder"
+			android:layout_gravity="center"
+			android:contentDescription="Update Image" />
+	
+	<Button
+			android:id="@+id/btnUpdateImage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Update Image"
+			android:layout_gravity="center" />
+	
+	<Button
+			android:id="@+id/btnUpdateArticle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Update Article"
+			android:layout_gravity="center" />
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="#FFFFFF"
+            android:fillViewport="true">
+	
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		
+		<!-- Navbar -->
+		<LinearLayout
+                style="?android:attr/buttonBarStyle"
+				android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="#FFFFFF">
+
+			<Button
+					android:id="@+id/btnWomen"
+					style="?android:attr/buttonBarButtonStyle"
+					android:text="Women"
+					android:textColor="@color/black"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/btnMen"
+                    style="?android:attr/buttonBarButtonStyle"
+					android:text="Men"
+					android:textColor="@color/black"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+			<Button
+					android:id="@+id/btnAccessories"
+					style="?android:attr/buttonBarButtonStyle"
+					android:text="Accessories"
+					android:textColor="@color/black"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+			
+			<!-- Optional Icons (e.g., search, cart) can go here -->
+		</LinearLayout>
+		
+		<!-- Hero Section -->
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="300dp"
+				android:orientation="horizontal"
+				android:background="#ADD8E6"
+				android:padding="16dp">
+		
+		<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_marginEnd="16dp"
+				android:gravity="center_vertical">
+		
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="24sp"
+				android:textStyle="bold"
+				android:text="Clothing Store"
+				android:textColor="#000000" />
+		
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Everything you will ever need"
+				android:layout_marginTop="8dp"
+				android:textColor="#777777" />
+
+			<Button
+					android:id="@+id/btnAll"
+					style="?android:attr/buttonBarButtonStyle"
+					android:text="PRESS HERE"
+					android:textStyle="bold"
+					android:textColor="@color/black"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			
+	</LinearLayout>
+	
+	<ImageView
+			android:id="@+id/mainDisplayImage"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:scaleType="fitCenter"
+			android:layout_weight="1"
+			android:contentDescription="DisplayImage" />
+</LinearLayout>
+	
+	</LinearLayout>
+</ScrollView>

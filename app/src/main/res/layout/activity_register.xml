@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:gravity="center"
+              android:background="#FFFFFF">
+	
+	<!-- Email Input Field -->
+	<EditText
+			android:id="@+id/editTextEmail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Email"
+			android:inputType="textEmailAddress"
+			android:drawableLeft="@android:drawable/ic_menu_send"
+			android:padding="12dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:backgroundTint="#ADD8E6"
+			android:textColorHint="#808080"
+			android:textColor="#000000" />
+	
+	<!-- Password Input Field -->
+	<EditText
+			android:id="@+id/editTextPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Password"
+			android:inputType="textPassword"
+			android:drawableLeft="@android:drawable/ic_lock_lock"
+			android:padding="12dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:backgroundTint="#ADD8E6"
+			android:textColorHint="#808080"
+			android:textColor="#000000" />
+	
+	<!-- Confirm Password Input Field -->
+	<EditText
+			android:id="@+id/editTextConfirmPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Confirm Password"
+			android:inputType="textPassword"
+			android:drawableLeft="@android:drawable/ic_lock_lock"
+			android:padding="12dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:backgroundTint="#ADD8E6"
+			android:textColorHint="#808080"
+			android:textColor="#000000" />
+	
+	<!-- Username Input Field -->
+	<EditText
+			android:id="@+id/editTextUsername"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Username"
+			android:inputType="text"
+			android:drawableLeft="@android:drawable/ic_menu_edit"
+			android:padding="12dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:backgroundTint="#ADD8E6"
+			android:textColorHint="#808080"
+			android:textColor="#000000" />
+	
+	<!-- Phone Number Input Field -->
+	<EditText
+			android:id="@+id/editTextPhone"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Phone Number"
+			android:inputType="phone"
+			android:drawableLeft="@android:drawable/ic_menu_call"
+			android:padding="12dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:backgroundTint="#ADD8E6"
+			android:textColorHint="#808080"
+			android:textColor="#000000" />
+	
+	<!-- Address Section -->
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Address"
+			android:textSize="16sp"
+			android:textColor="#000000" />
+	
+	<!-- City Input Field -->
+	<EditText
+			android:id="@+id/editTextCity"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="City"
+			android:inputType="text"
+			android:drawableLeft="@android:drawable/ic_menu_mylocation"
+			android:padding="12dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:backgroundTint="#ADD8E6"
+			android:textColorHint="#808080"
+			android:textColor="#000000" />
+	
+	<!-- Horizontal Layout for Street Name and Street Number -->
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="2">
+		
+		<!-- Street Name Input Field -->
+		<EditText
+				android:id="@+id/editTextStreetName"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:hint="Street Name"
+				android:inputType="text"
+				android:padding="12dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:backgroundTint="#ADD8E6"
+				android:textColorHint="#808080"
+				android:textColor="#000000" />
+		
+		<!-- Street Number Input Field -->
+		<EditText
+				android:id="@+id/editTextStreetNumber"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:hint="Number"
+				android:inputType="number"
+				
+				android:padding="12dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:backgroundTint="#ADD8E6"
+				android:textColorHint="#808080"
+				android:textColor="#000000" />
+	
+	</LinearLayout>
+	
+	<!-- Zipcode Input Field -->
+	<EditText
+			android:id="@+id/editTextZipcode"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Zipcode"
+			android:inputType="text"
+			android:drawableLeft="@android:drawable/ic_menu_mapmode"
+			android:padding="12dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:backgroundTint="#ADD8E6"
+			android:textColorHint="#808080"
+			android:textColor="#000000" />
+	
+	<CheckBox
+			android:id="@+id/checkboxShowPasswordRegister"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Show Password"
+			android:textColor="#000000"
+			android:layout_marginTop="8dp"/>
+	
+	
+	<!-- Register Button -->
+	<Button
+			android:id="@+id/btnRegister"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Register"
+			android:textColor="#FFFFFF"
+			android:background="#000000"
+			android:padding="12dp"
+			android:textStyle="bold" />
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="All fields must be filled in order to proceed"/>
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_add_article.xml -->
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="16dp">
+	
+	<EditText
+			android:id="@+id/etArticleName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Article Name"
+			android:inputType="text" />
+	
+	<EditText
+			android:id="@+id/etArticlePrice"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Price"
+			android:inputType="numberDecimal" />
+	
+	<EditText
+			android:id="@+id/etArticleDescription"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Description"
+			android:inputType="textMultiLine"
+			android:minLines="3" />
+	
+	<Spinner
+			android:id="@+id/spinnerCategory"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	
+	<ImageView
+			android:id="@+id/imageViewUpload"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:src="@drawable/ic_image_placeholder"
+			android:layout_gravity="center"
+			android:contentDescription="Upload Image" />
+	
+	<Button
+			android:id="@+id/btnUploadImage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Upload Image"
+			android:layout_gravity="center" />
+	
+	<Button
+			android:id="@+id/btnSubmitArticle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Submit Article"
+			android:layout_gravity="center" />
+</LinearLayout>

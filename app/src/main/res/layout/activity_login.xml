@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical"
+			  android:padding="16dp"
+			  android:gravity="center"
+			  android:background="#FFFFFF"
+			  android:layout_marginTop="-200dp">
+
+
+	<!-- Username Input Field -->
+	<EditText
+			android:id="@+id/editTextUsername"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Email"
+			android:inputType="text"
+			android:drawableLeft="@android:drawable/ic_menu_edit"
+			android:padding="12dp"
+			android:backgroundTint="#ADD8E6"
+			android:layout_marginBottom="16dp"
+			android:layout_marginTop="32dp"
+			android:textColorHint="#808080"
+			android:textColor="#000000" />
+
+	<!-- Password Input Field -->
+	<EditText
+			android:id="@+id/editTextPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Password"
+			android:inputType="textPassword"
+			android:drawableLeft="@android:drawable/ic_lock_lock"
+			android:padding="12dp"
+			android:backgroundTint="#ADD8E6"
+			android:layout_marginBottom="24dp"
+			android:textColorHint="#808080"
+			android:textColor="#000000" />
+	
+	<CheckBox
+			android:id="@+id/checkboxShowPassword"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Show Password"
+			android:textColor="#000000"
+			android:layout_marginTop="8dp"/>
+
+	<!-- Login Button -->
+	<Button
+			android:id="@+id/btnLogin"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Login"
+			android:textColor="#FFFFFF"
+			android:background="#000000"
+			android:padding="12dp"
+			android:textStyle="bold" />
+	
+	<Button
+			android:id="@+id/btnRegister"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Register"
+			android:textColor="#FFFFFF"
+			android:background="#000000"
+			android:padding="12dp"
+			android:textStyle="bold"
+			android:layout_marginTop="16dp" />
+
+</LinearLayout>

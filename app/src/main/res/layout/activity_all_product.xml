@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="#FFFFFF"
+            android:fillViewport="true">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="#FFFFFF">
+
+            <Button
+                    android:id="@+id/btnWomen"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:text="Women"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/btnMen"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:text="Men"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <Button
+                    android:id="@+id/btnAccessories"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:text="Accessories"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Search bar and additional filters -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="#FFFFFF">
+
+            <EditText
+                    android:id="@+id/searchFilter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Search for items..."
+                    android:padding="12dp" />
+
+            <!-- Price Range Filters -->
+            <EditText
+                    android:id="@+id/minPriceFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:hint="Min Price"
+                    android:inputType="numberDecimal" />
+
+            <EditText
+                    android:id="@+id/maxPriceFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Max Price"
+                    android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <!-- Clothing Type Filter -->
+        <Spinner
+                android:id="@+id/typeFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:entries="@array/all_types" />
+
+        <!-- RecyclerView for filtered items -->
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"/>
+    </LinearLayout>
+
+
+</ScrollView>

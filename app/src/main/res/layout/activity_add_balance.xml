@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="16dp"
+		android:gravity="center">
+	
+	<!-- Instruction Text -->
+	<TextView
+			android:id="@+id/addBalanceTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Enter the amount to add to your balance"
+			android:textSize="18sp"
+			android:textColor="@android:color/black"
+			android:gravity="center"
+			android:layout_marginBottom="16dp"/>
+	
+	<!-- Balance Input Field -->
+	<EditText
+			android:id="@+id/addBalanceEdiText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Balance"
+			android:inputType="numberDecimal"
+			android:gravity="center"
+			android:padding="12dp"
+			android:background="@android:drawable/edit_text"
+			android:layout_marginBottom="24dp"/>
+	
+	<!-- Add Balance Button -->
+	<Button
+			android:id="@+id/addBalanceConfirmationButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Add Balance"
+			android:paddingStart="32dp"
+			android:paddingEnd="32dp"
+			android:paddingTop="12dp"
+			android:paddingBottom="12dp"
+			android:backgroundTint="#000000"
+			android:textColor="@android:color/white"/>
+
+</LinearLayout>

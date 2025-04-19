@@ -1,0 +1,48 @@
+<resources>
+	<string-array name="clothing_types">
+		<item>All</item>
+		<item>Shirt</item>
+		<item>Coat</item>
+		<item>Short Sleeve</item>
+		<item>Jacket</item>
+		<item>Top</item>
+		<item>Pants</item>
+		<item>Dress</item>
+		<!-- Add other types as needed -->
+	</string-array>
+	<string-array name="jewelery_types">
+		<item>All</item>
+		<item>Ring</item>
+		<item>Bracelet</item>
+		<item>Earring</item>
+		<!-- Add other types as needed -->
+	</string-array>
+	<string-array name="all_types">
+		<item>All</item>
+		<item>Shirt</item>
+		<item>Coat</item>
+		<item>Short Sleeve</item>
+		<item>Jacket</item>
+		<item>Top</item>
+		<item>Pants</item>
+		<item>Dress</item>
+		<item>All</item>
+		<item>Ring</item>
+		<item>Bracelet</item>
+		<item>Earring</item>
+		<!-- Add other types as needed -->
+	</string-array>
+	
+	<string name="app_name">ClothingStore</string>
+	<string name="textMainMenu">ClothingStore v1.0.0</string>
+	<string name="btnMen">Men</string>
+	<string name="btnWomen">Women</string>
+	<string name="btnKids">Kids</string>
+	<string name="mainCategoryText">Choose your category</string>
+	
+	<string-array name="article_categories">
+		<item>men\'s clothing</item>
+		<item>women\'s clothing</item>
+		<item>jewelery</item>
+	</string-array>
+</resources>
